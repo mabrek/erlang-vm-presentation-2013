@@ -70,7 +70,7 @@
 <section class="slide">
   <h2>What scheduler runs</h2>
   <ul>
-    <li>processes</li>
+    <li>processes (preemptive)</li>
     <li>ports</li>
     <li>BIFs and NIFs</li>
     <li>network io select/kpoll</li>
@@ -80,9 +80,30 @@
 <section class="slide">
   <h2>Memory management</h2>
   <ul>
+    <li>immutable data</li>
     <li>per-process heaps</li>
     <li>large refcounted binaries</li>
     <li>ETS tables</li>
+    <li>&hellip;</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Garbage collection</h2>
+  <ul>
+    <li>per process: heap + stack</li>
+    <li>stop-and-copy with minor and major collection</li>
+    <li>young and old heap</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Bytecode</h2>
+  <ul>
+    <li>interpreted</li>
+    <li>no JIT is done now, research is ongoing</li>
+    <li>optimizations are done on loading</li>
+    <li>HiPE - partial native compilation</li>
   </ul>
 </section>
 
@@ -96,17 +117,11 @@
 </section>
 
 <section class="slide">
-  <h2>Links</h2>
-  <ul>
-    <li></li>
-  </ul>
-</section>
-
-<section class="slide">
     <h2>Q&amp;A</h2>
     <p>Anton Lebedevich</p>
     <p>mabrek@gmail.com</p>
-    <p><a target="_blank" href="https://github.com/mabrek">github.com/mabrek</a></p>
+    <p><a href="https://github.com/mabrek">github.com/mabrek</a></p>
+    <p><a href="http://mabrek.github.io/erlang-vm-presentation-2013/">mabrek.github.io/erlang-vm-presentation-2013</a></p>
 </section>
 
 <!-- End slides. -->
