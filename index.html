@@ -67,7 +67,7 @@
 <section class="slide">
   <h2>What scheduler runs</h2>
   <ul>
-    <li>processes (preemptive)</li>
+    <li>processes: lightweight and preemptive</li>
     <li>ports</li>
     <li>BIFs and NIFs</li>
     <li>network io select/kpoll</li>
@@ -79,6 +79,7 @@
   <ul>
     <li>immutable data</li>
     <li>per-process heaps</li>
+    <li>message passing</li>
     <li>large refcounted binaries</li>
     <li>ETS tables</li>
     <li>&hellip;</li>
@@ -98,6 +99,7 @@
   <h2>Bytecode</h2>
   <ul>
     <li>interpreted</li>
+    <li>hot code reloading</li>
     <li>no JIT compilation, research is ongoing</li>
     <li>some optimizations are done on loading</li>
     <li>HiPE - partial native compilation</li>
